@@ -1,1 +1,15 @@
-<h1>Hello!</h1>
+
+<% @quizzes.each do |q| %>
+<div class="booyah-box col-xs-8 col-xs-offset-2">
+  <h3><b>Question:</b> <%= q.question %></h3>
+  <i>Hint: <%= q.hint %> </i>
+</div>
+<% end %>
+
+<div class="clear"></div>
+<br /><br />
+
+<div class="text-center">
+<%= link_to 'Create a Question', new_quiz_path(@quiz), class: 'btn btn-primary btn-lg' %>
+</div>
+

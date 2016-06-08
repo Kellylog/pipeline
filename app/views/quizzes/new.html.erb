@@ -1,0 +1,10 @@
+<div class="booyah-box col-xs-8 col-xs-offset-2">
+<h1>Enter a question!</h1>
+
+<%= simple_form_for @quiz do |f| %>
+  <%= f.input :question %><br />
+  <%= f.input :hint %><br />
+  <%= f.submit 'create', class: 'btn btn-primary' %>
+  <% end %>
+</div>
+
